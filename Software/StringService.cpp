@@ -23,5 +23,12 @@ void Replace(std::string &source, const std::string &lookup, const std::string &
 	}
 }
 
+std::string CharToHexStr(char value)
+{
+	std::stringstream ss;
+	ss << std::hex << std::uppercase << std::setw(2) << (0x000000FF & ((int)value));
+	return ss.str();
+}
+
 } // StringService
 

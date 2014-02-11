@@ -6,6 +6,8 @@ namespace StringService
 
 void Replace(std::string &source, const std::string &lookup, const std::string &replace);
 
+std::string CharToHexStr(char value);
+
 } // StringService
 
 #endif // _STRING_SERVICE_H_
