@@ -30,5 +30,15 @@ std::string CharToHexStr(char value)
 	return ss.str();
 }
 
+std::string VectorCharToHexSrt(std::vector<char> vec_values)
+{
+	std::string str;
+	for (unsigned i = 0; i <vec_values.size(); ++i)
+	{
+		str = str + CharToHexStr(vec_values[i]);
+	}
+	return str;
+}
+
 } // StringService
 
